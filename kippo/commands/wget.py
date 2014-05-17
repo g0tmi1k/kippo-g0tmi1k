@@ -116,8 +116,8 @@ class command_wget(HoneyPotCommand):
             error = error.getErrorMessage()
         self.writeln(error)
         # Real wget also adds this:
-        #self.writeln('%s ERROR 404: Not Found.' % \
-        #    time.strftime('%Y-%m-%d %T'))
+        self.writeln('%s ERROR 404: NOT FOUND.\n' % \
+            time.strftime('%Y-%m-%d %T'))
         self.exit()
 commands['/usr/bin/wget'] = command_wget
 

@@ -1,0 +1,11 @@
+#kippo.cfg
+#log/tty/*
+
+*.pyc
+data/lastlog.txt
+data/ssh_host_dsa_key
+data/ssh_host_dsa_key.pub
+data/ssh_host_rsa_key
+data/ssh_host_rsa_key.pub
+kippo.pid
+log/kippo.log

@@ -310,5 +310,6 @@ commands['export'] = command_nop
 commands['alias'] = command_nop
 commands['/bin/kill'] = command_nop
 commands['/bin/su'] = command_nop
+commands['umask'] = command_nop
 
 # vim: set sw=4 et:

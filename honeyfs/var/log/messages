@@ -1,0 +1,292 @@
+May 19 12:56:33  kernel: imklog 5.8.11, log source = /proc/kmsg started.
+May 19 12:56:33  rsyslogd: [origin software="rsyslogd" swVersion="5.8.11" x-pid="1912" x-info="http://www.rsyslog.com"] start
+May 19 12:56:33  kernel: [    0.000000] Initializing cgroup subsys cpuset
+May 19 12:56:33  kernel: [    0.000000] Initializing cgroup subsys cpu
+May 19 12:56:33  kernel: [    0.000000] Linux version 3.2.0-4-amd64 (-kernel@lists..org) (gcc version 4.6.3 (Debian 4.6.3-14) ) #1 SMP Debian 3.2.57-3+deb7u1
+May 19 12:56:33  kernel: [    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-3.2.0-4-amd64 root=UUID=65626fdc-e4c5-4539-8745-edc212b9b0af ro quiet
+May 19 12:56:33  kernel: [    0.000000] BIOS-provided physical RAM map:
+May 19 12:56:33  kernel: [    0.000000]  BIOS-e820: 0000000000000000 - 000000000009fc00 (usable)
+May 19 12:56:33  kernel: [    0.000000]  BIOS-e820: 000000000009fc00 - 00000000000a0000 (reserved)
+May 19 12:56:33  kernel: [    0.000000]  BIOS-e820: 00000000000f0000 - 0000000000100000 (reserved)
+May 19 12:56:33  kernel: [    0.000000]  BIOS-e820: 0000000000100000 - 000000000fffe000 (usable)
+May 19 12:56:33  kernel: [    0.000000]  BIOS-e820: 000000000fffe000 - 0000000010000000 (reserved)
+May 19 12:56:33  kernel: [    0.000000]  BIOS-e820: 00000000feffc000 - 00000000ff000000 (reserved)
+May 19 12:56:33  kernel: [    0.000000]  BIOS-e820: 00000000fffc0000 - 0000000100000000 (reserved)
+May 19 12:56:33  kernel: [    0.000000] NX (Execute Disable) protection: active
+May 19 12:56:33  kernel: [    0.000000] SMBIOS 2.4 present.
+May 19 12:56:33  kernel: [    0.000000] No AGP bridge found
+May 19 12:56:33  kernel: [    0.000000] last_pfn = 0xfffe max_arch_pfn = 0x400000000
+May 19 12:56:33  kernel: [    0.000000] PAT not supported by CPU.
+May 19 12:56:33  kernel: [    0.000000] found SMP MP-table at [ffff8800000f1760] f1760
+May 19 12:56:33  kernel: [    0.000000] init_memory_mapping: 0000000000000000-000000000fffe000
+May 19 12:56:33  kernel: [    0.000000] RAMDISK: 0ebee000 - 0f5b0000
+May 19 12:56:33  kernel: [    0.000000] ACPI: RSDP 00000000000f1600 00014 (v00 BOCHS )
+May 19 12:56:33  kernel: [    0.000000] ACPI: RSDT 000000000fffe450 00034 (v01 BOCHS  BXPCRSDT 00000001 BXPC 00000001)
+May 19 12:56:33  kernel: [    0.000000] ACPI: FACP 000000000fffff80 00074 (v01 BOCHS  BXPCFACP 00000001 BXPC 00000001)
+May 19 12:56:33  kernel: [    0.000000] ACPI: DSDT 000000000fffe490 01137 (v01   BXPC   BXDSDT 00000001 INTL 20120913)
+May 19 12:56:33  kernel: [    0.000000] ACPI: FACS 000000000fffff40 00040
+May 19 12:56:33  kernel: [    0.000000] ACPI: SSDT 000000000ffff700 00838 (v01 BOCHS  BXPCSSDT 00000001 BXPC 00000001)
+May 19 12:56:33  kernel: [    0.000000] ACPI: APIC 000000000ffff610 00078 (v01 BOCHS  BXPCAPIC 00000001 BXPC 00000001)
+May 19 12:56:33  kernel: [    0.000000] ACPI: HPET 000000000ffff5d0 00038 (v01 BOCHS  BXPCHPET 00000001 BXPC 00000001)
+May 19 12:56:33  kernel: [    0.000000] No NUMA configuration found
+May 19 12:56:33  kernel: [    0.000000] Faking a node at 0000000000000000-000000000fffe000
+May 19 12:56:33  kernel: [    0.000000] Initmem setup node 0 0000000000000000-000000000fffe000
+May 19 12:56:33  kernel: [    0.000000]   NODE_DATA [000000000fff6000 - 000000000fffafff]
+May 19 12:56:33  kernel: [    0.000000] kvm-clock: Using msrs 4b564d01 and 4b564d00
+May 19 12:56:33  kernel: [    0.000000] kvm-clock: cpu 0, msr 0:16a9701, boot clock
+May 19 12:56:33  kernel: [    0.000000] Zone PFN ranges:
+May 19 12:56:33  kernel: [    0.000000]   DMA      0x00000010 -> 0x00001000
+May 19 12:56:33  kernel: [    0.000000]   DMA32    0x00001000 -> 0x00100000
+May 19 12:56:33  kernel: [    0.000000]   Normal   empty
+May 19 12:56:33  kernel: [    0.000000] Movable zone start PFN for each node
+May 19 12:56:33  kernel: [    0.000000] early_node_map[2] active PFN ranges
+May 19 12:56:33  kernel: [    0.000000]     0: 0x00000010 -> 0x0000009f
+May 19 12:56:33  kernel: [    0.000000]     0: 0x00000100 -> 0x0000fffe
+May 19 12:56:33  kernel: [    0.000000] ACPI: PM-Timer IO Port: 0xb008
+May 19 12:56:33  kernel: [    0.000000] ACPI: LAPIC (acpi_id[0x00] lapic_id[0x00] enabled)
+May 19 12:56:33  kernel: [    0.000000] ACPI: LAPIC_NMI (acpi_id[0xff] dfl dfl lint[0x1])
+May 19 12:56:33  kernel: [    0.000000] ACPI: IOAPIC (id[0x00] address[0xfec00000] gsi_base[0])
+May 19 12:56:33  kernel: [    0.000000] IOAPIC[0]: apic_id 0, version 17, address 0xfec00000, GSI 0-23
+May 19 12:56:33  kernel: [    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+May 19 12:56:33  kernel: [    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 5 global_irq 5 high level)
+May 19 12:56:33  kernel: [    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+May 19 12:56:33  kernel: [    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 10 global_irq 10 high level)
+May 19 12:56:33  kernel: [    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 11 global_irq 11 high level)
+May 19 12:56:33  kernel: [    0.000000] Using ACPI (MADT) for SMP configuration information
+May 19 12:56:33  kernel: [    0.000000] ACPI: HPET id: 0x8086a201 base: 0xfed00000
+May 19 12:56:33  kernel: [    0.000000] SMP: Allowing 1 CPUs, 0 hotplug CPUs
+May 19 12:56:33  kernel: [    0.000000] PM: Registered nosave memory: 000000000009f000 - 00000000000a0000
+May 19 12:56:33  kernel: [    0.000000] PM: Registered nosave memory: 00000000000a0000 - 00000000000f0000
+May 19 12:56:33  kernel: [    0.000000] PM: Registered nosave memory: 00000000000f0000 - 0000000000100000
+May 19 12:56:33  kernel: [    0.000000] Allocating PCI resources starting at 10000000 (gap: 10000000:eeffc000)
+May 19 12:56:33  kernel: [    0.000000] Booting paravirtualized kernel on KVM
+May 19 12:56:33  kernel: [    0.000000] setup_percpu: NR_CPUS:512 nr_cpumask_bits:512 nr_cpu_ids:1 nr_node_ids:1
+May 19 12:56:33  kernel: [    0.000000] PERCPU: Embedded 28 pages/cpu @ffff88000fc00000 s82944 r8192 d23552 u2097152
+May 19 12:56:33  kernel: [    0.000000] kvm-clock: cpu 0, msr 0:fc13701, primary cpu clock
+May 19 12:56:33  kernel: [    0.000000] kvm-stealtime: cpu 0, msr fc0dfc0
+May 19 12:56:33  kernel: [    0.000000] Built 1 zonelists in Node order, mobility grouping on.  Total pages: 64520
+May 19 12:56:33  kernel: [    0.000000] Policy zone: DMA32
+May 19 12:56:33  kernel: [    0.000000] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-3.2.0-4-amd64 root=UUID=65626fdc-e4c5-4539-8745-edc212b9b0af ro quiet
+May 19 12:56:33  kernel: [    0.000000] PID hash table entries: 1024 (order: 1, 8192 bytes)
+May 19 12:56:33  kernel: [    0.000000] Checking aperture...
+May 19 12:56:33  kernel: [    0.000000] No AGP bridge found
+May 19 12:56:33  kernel: [    0.000000] Memory: 238992k/262136k available (3429k kernel code, 452k absent, 22692k reserved, 3310k data, 580k init)
+May 19 12:56:33  kernel: [    0.000000] Hierarchical RCU implementation.
+May 19 12:56:33  kernel: [    0.000000] 	RCU dyntick-idle grace-period acceleration is enabled.
+May 19 12:56:33  kernel: [    0.000000] NR_IRQS:33024 nr_irqs:256 16
+May 19 12:56:33  kernel: [    0.000000] Console: colour VGA+ 80x25
+May 19 12:56:33  kernel: [    0.000000] console [tty0] enabled
+May 19 12:56:33  kernel: [    0.000000] Detected 3491.936 MHz processor.
+May 19 12:56:33  kernel: [    0.008000] Calibrating delay loop (skipped) preset value.. 6983.87 BogoMIPS (lpj=13967744)
+May 19 12:56:33  kernel: [    0.008000] pid_max: default: 32768 minimum: 301
+May 19 12:56:33  kernel: [    0.008000] Security Framework initialized
+May 19 12:56:33  kernel: [    0.008000] AppArmor: AppArmor disabled by boot time parameter
+May 19 12:56:33  kernel: [    0.008000] Dentry cache hash table entries: 32768 (order: 6, 262144 bytes)
+May 19 12:56:33  kernel: [    0.008000] Inode-cache hash table entries: 16384 (order: 5, 131072 bytes)
+May 19 12:56:33  kernel: [    0.008000] Mount-cache hash table entries: 256
+May 19 12:56:33  kernel: [    0.008000] Initializing cgroup subsys cpuacct
+May 19 12:56:33  kernel: [    0.008000] Initializing cgroup subsys memory
+May 19 12:56:33  kernel: [    0.008000] Initializing cgroup subsys devices
+May 19 12:56:33  kernel: [    0.008000] Initializing cgroup subsys freezer
+May 19 12:56:33  kernel: [    0.008000] Initializing cgroup subsys net_cls
+May 19 12:56:33  kernel: [    0.008000] Initializing cgroup subsys blkio
+May 19 12:56:33  kernel: [    0.008000] Initializing cgroup subsys perf_event
+May 19 12:56:33  kernel: [    0.008000] mce: CPU supports 10 MCE banks
+May 19 12:56:33  kernel: [    0.008000] SMP alternatives: switching to UP code
+May 19 12:56:33  kernel: [    0.008250] Freeing SMP alternatives: 8k freed
+May 19 12:56:33  kernel: [    0.008261] ACPI: Core revision 20110623
+May 19 12:56:33  kernel: [    0.008922] Enabling x2apic
+May 19 12:56:33  kernel: [    0.008924] Enabled x2apic
+May 19 12:56:33  kernel: [    0.009067] Switched APIC routing to physical x2apic.
+May 19 12:56:33  kernel: [    0.010002] ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+May 19 12:56:33  kernel: [    0.010004] CPU0: Intel QEMU Virtual CPU version 1.7.0 stepping 03
+May 19 12:56:33  kernel: [    0.012000] Performance Events: Broken PMU hardware detected, using software events only.
+May 19 12:56:33  kernel: [    0.012000] NMI watchdog disabled (cpu0): hardware events not enabled
+May 19 12:56:33  kernel: [    0.012000] Brought up 1 CPUs
+May 19 12:56:33  kernel: [    0.012000] Total of 1 processors activated (6983.87 BogoMIPS).
+May 19 12:56:33  kernel: [    0.012000] devtmpfs: initialized
+May 19 12:56:33  kernel: [    0.012000] print_constraints: dummy: 
+May 19 12:56:33  kernel: [    0.012000] NET: Registered protocol family 16
+May 19 12:56:33  kernel: [    0.012000] ACPI: bus type pci registered
+May 19 12:56:33  kernel: [    0.012000] PCI: Using configuration type 1 for base access
+May 19 12:56:33  kernel: [    0.012000] bio: create slab <bio-0> at 0
+May 19 12:56:33  kernel: [    0.012000] ACPI: Added _OSI(Module Device)
+May 19 12:56:33  kernel: [    0.012000] ACPI: Added _OSI(Processor Device)
+May 19 12:56:33  kernel: [    0.012000] ACPI: Added _OSI(3.0 _SCP Extensions)
+May 19 12:56:33  kernel: [    0.012000] ACPI: Added _OSI(Processor Aggregator Device)
+May 19 12:56:33  kernel: [    0.012000] ACPI: Interpreter enabled
+May 19 12:56:33  kernel: [    0.012000] ACPI: (supports S0 S3 S4 S5)
+May 19 12:56:33  kernel: [    0.012000] ACPI: Using IOAPIC for interrupt routing
+May 19 12:56:33  kernel: [    0.013166] ACPI: No dock devices found.
+May 19 12:56:33  kernel: [    0.013168] HEST: Table not found.
+May 19 12:56:33  kernel: [    0.013170] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+May 19 12:56:33  kernel: [    0.013202] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+May 19 12:56:33  kernel: [    0.013265] pci_root PNP0A03:00: host bridge window [io  0x0000-0x0cf7]
+May 19 12:56:33  kernel: [    0.013266] pci_root PNP0A03:00: host bridge window [io  0x0d00-0xffff]
+May 19 12:56:33  kernel: [    0.013267] pci_root PNP0A03:00: host bridge window [mem 0x000a0000-0x000bffff]
+May 19 12:56:33  kernel: [    0.013269] pci_root PNP0A03:00: host bridge window [mem 0x80000000-0xfebfffff]
+May 19 12:56:33  kernel: [    0.020460] pci 0000:00:01.3: quirk: [io  0xb000-0xb03f] claimed by PIIX4 ACPI
+May 19 12:56:33  kernel: [    0.020464] pci 0000:00:01.3: quirk: [io  0xb100-0xb10f] claimed by PIIX4 SMB
+May 19 12:56:33  kernel: [    0.045386]  pci0000:00: Unable to request _OSC control (_OSC support mask: 0x1e)
+May 19 12:56:33  kernel: [    0.047031] ACPI: PCI Interrupt Link [LNKA] (IRQs 5 *10 11)
+May 19 12:56:33  kernel: [    0.047079] ACPI: PCI Interrupt Link [LNKB] (IRQs 5 *10 11)
+May 19 12:56:33  kernel: [    0.047120] ACPI: PCI Interrupt Link [LNKC] (IRQs 5 10 *11)
+May 19 12:56:33  kernel: [    0.047157] ACPI: PCI Interrupt Link [LNKD] (IRQs 5 10 *11)
+May 19 12:56:33  kernel: [    0.047181] ACPI: PCI Interrupt Link [LNKS] (IRQs *9)
+May 19 12:56:33  kernel: [    0.047327] vgaarb: device added: PCI:0000:00:02.0,decodes=io+mem,owns=io+mem,locks=none
+May 19 12:56:33  kernel: [    0.047329] vgaarb: loaded
+May 19 12:56:33  kernel: [    0.047329] vgaarb: bridge control possible 0000:00:02.0
+May 19 12:56:33  kernel: [    0.047374] PCI: Using ACPI for IRQ routing
+May 19 12:56:33  kernel: [    0.047594] HPET: 3 timers in total, 0 timers will be used for per-cpu timer
+May 19 12:56:33  kernel: [    0.047606] hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0
+May 19 12:56:33  kernel: [    0.048005] hpet0: 3 comparators, 64-bit 100.000000 MHz counter
+May 19 12:56:33  kernel: [    0.056081] Switching to clocksource kvm-clock
+May 19 12:56:33  kernel: [    0.057453] pnp: PnP ACPI init
+May 19 12:56:33  kernel: [    0.057461] ACPI: bus type pnp registered
+May 19 12:56:33  kernel: [    0.057945] pnp: PnP ACPI: found 9 devices
+May 19 12:56:33  kernel: [    0.057946] ACPI: ACPI bus type pnp unregistered
+May 19 12:56:33  kernel: [    0.063331] NET: Registered protocol family 2
+May 19 12:56:33  kernel: [    0.063374] IP route cache hash table entries: 2048 (order: 2, 16384 bytes)
+May 19 12:56:33  kernel: [    0.063498] TCP established hash table entries: 8192 (order: 5, 131072 bytes)
+May 19 12:56:33  kernel: [    0.063544] TCP bind hash table entries: 8192 (order: 5, 131072 bytes)
+May 19 12:56:33  kernel: [    0.063584] TCP: Hash tables configured (established 8192 bind 8192)
+May 19 12:56:33  kernel: [    0.063587] TCP reno registered
+May 19 12:56:33  kernel: [    0.063589] UDP hash table entries: 128 (order: 0, 4096 bytes)
+May 19 12:56:33  kernel: [    0.063594] UDP-Lite hash table entries: 128 (order: 0, 4096 bytes)
+May 19 12:56:33  kernel: [    0.063634] NET: Registered protocol family 1
+May 19 12:56:33  kernel: [    0.063645] pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+May 19 12:56:33  kernel: [    0.063652] pci 0000:00:01.0: PIIX3: Enabling Passive Release
+May 19 12:56:33  kernel: [    0.063664] pci 0000:00:01.0: Activating ISA DMA hang workarounds
+May 19 12:56:33  kernel: [    0.063733] ACPI: PCI Interrupt Link [LNKD] enabled at IRQ 11
+May 19 12:56:33  kernel: [    0.064024] Unpacking initramfs...
+May 19 12:56:33  kernel: [    0.201823] Freeing initrd memory: 9992k freed
+May 19 12:56:33  kernel: [    0.202792] audit: initializing netlink socket (disabled)
+May 19 12:56:33  kernel: [    0.202802] type=2000 audit(1400500591.200:1): initialized
+May 19 12:56:33  kernel: [    0.211684] HugeTLB registered 2 MB page size, pre-allocated 0 pages
+May 19 12:56:33  kernel: [    0.211819] VFS: Disk quotas dquot_6.5.2
+May 19 12:56:33  kernel: [    0.211831] Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+May 19 12:56:33  kernel: [    0.211873] msgmni has been set to 486
+May 19 12:56:33  kernel: [    0.211988] alg: No test for stdrng (krng)
+May 19 12:56:33  kernel: [    0.212008] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 253)
+May 19 12:56:33  kernel: [    0.212011] io scheduler noop registered
+May 19 12:56:33  kernel: [    0.212011] io scheduler deadline registered
+May 19 12:56:33  kernel: [    0.212019] io scheduler cfq registered (default)
+May 19 12:56:33  kernel: [    0.212067] pci_hotplug: PCI Hot Plug PCI Core version: 0.5
+May 19 12:56:33  kernel: [    0.212079] pciehp: PCI Express Hot Plug Controller Driver version: 0.4
+May 19 12:56:33  kernel: [    0.212080] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+May 19 12:56:33  kernel: [    0.212132] acpiphp: Slot [3] registered
+May 19 12:56:33  kernel: [    0.212141] acpiphp: Slot [4] registered
+May 19 12:56:33  kernel: [    0.212152] acpiphp: Slot [5] registered
+May 19 12:56:33  kernel: [    0.212161] acpiphp: Slot [6] registered
+May 19 12:56:33  kernel: [    0.212169] acpiphp: Slot [7] registered
+May 19 12:56:33  kernel: [    0.212179] acpiphp: Slot [8] registered
+May 19 12:56:33  kernel: [    0.212188] acpiphp: Slot [9] registered
+May 19 12:56:33  kernel: [    0.212197] acpiphp: Slot [10] registered
+May 19 12:56:33  kernel: [    0.212207] acpiphp: Slot [11] registered
+May 19 12:56:33  kernel: [    0.212216] acpiphp: Slot [12] registered
+May 19 12:56:33  kernel: [    0.212230] acpiphp: Slot [13] registered
+May 19 12:56:33  kernel: [    0.212240] acpiphp: Slot [14] registered
+May 19 12:56:33  kernel: [    0.212249] acpiphp: Slot [15] registered
+May 19 12:56:33  kernel: [    0.212258] acpiphp: Slot [16] registered
+May 19 12:56:33  kernel: [    0.212268] acpiphp: Slot [17] registered
+May 19 12:56:33  kernel: [    0.212277] acpiphp: Slot [18] registered
+May 19 12:56:33  kernel: [    0.212286] acpiphp: Slot [19] registered
+May 19 12:56:33  kernel: [    0.212296] acpiphp: Slot [20] registered
+May 19 12:56:33  kernel: [    0.212304] acpiphp: Slot [21] registered
+May 19 12:56:33  kernel: [    0.212313] acpiphp: Slot [22] registered
+May 19 12:56:33  kernel: [    0.212325] acpiphp: Slot [23] registered
+May 19 12:56:33  kernel: [    0.212333] acpiphp: Slot [24] registered
+May 19 12:56:33  kernel: [    0.212342] acpiphp: Slot [25] registered
+May 19 12:56:33  kernel: [    0.212352] acpiphp: Slot [26] registered
+May 19 12:56:33  kernel: [    0.212361] acpiphp: Slot [27] registered
+May 19 12:56:33  kernel: [    0.212369] acpiphp: Slot [28] registered
+May 19 12:56:33  kernel: [    0.212379] acpiphp: Slot [29] registered
+May 19 12:56:33  kernel: [    0.212388] acpiphp: Slot [30] registered
+May 19 12:56:33  kernel: [    0.212397] acpiphp: Slot [31] registered
+May 19 12:56:33  kernel: [    0.212492] ERST: Table is not found!
+May 19 12:56:33  kernel: [    0.212493] GHES: HEST is not enabled!
+May 19 12:56:33  kernel: [    0.212522] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+May 19 12:56:33  kernel: [    0.212856] Linux agpgart interface v0.103
+May 19 12:56:33  kernel: [    0.212942] i8042: PNP: PS/2 Controller [PNP0303:KBD,PNP0f13:MOU] at 0x60,0x64 irq 1,12
+May 19 12:56:33  kernel: [    0.213368] serio: i8042 KBD port at 0x60,0x64 irq 1
+May 19 12:56:33  kernel: [    0.213372] serio: i8042 AUX port at 0x60,0x64 irq 12
+May 19 12:56:33  kernel: [    0.213428] mousedev: PS/2 mouse device common for all mice
+May 19 12:56:33  kernel: [    0.213556] input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input0
+May 19 12:56:33  kernel: [    0.213679] rtc_cmos 00:01: RTC can wake from S4
+May 19 12:56:33  kernel: [    0.213779] rtc_cmos 00:01: rtc core: registered rtc_cmos as rtc0
+May 19 12:56:33  kernel: [    0.213882] rtc0: alarms up to one day, 114 bytes nvram, hpet irqs
+May 19 12:56:33  kernel: [    0.213892] cpuidle: using governor ladder
+May 19 12:56:33  kernel: [    0.213893] cpuidle: using governor menu
+May 19 12:56:33  kernel: [    0.213980] TCP cubic registered
+May 19 12:56:33  kernel: [    0.214002] NET: Registered protocol family 10
+May 19 12:56:33  kernel: [    0.214249] Mobile IPv6
+May 19 12:56:33  kernel: [    0.214251] NET: Registered protocol family 17
+May 19 12:56:33  kernel: [    0.214255] Registering the dns_resolver key type
+May 19 12:56:33  kernel: [    0.214325] registered taskstats version 1
+May 19 12:56:33  kernel: [    0.214453] rtc_cmos 00:01: setting system clock to 2014-05-19 11:56:31 UTC (1400500591)
+May 19 12:56:33  kernel: [    0.214470] Initializing network drop monitor service
+May 19 12:56:33  kernel: [    0.215047] Freeing unused kernel memory: 580k freed
+May 19 12:56:33  kernel: [    0.215156] Write protecting the kernel read-only data: 6144k
+May 19 12:56:33  kernel: [    0.216395] Freeing unused kernel memory: 648k freed
+May 19 12:56:33  kernel: [    0.217851] Freeing unused kernel memory: 688k freed
+May 19 12:56:33  kernel: [    0.242016] SCSI subsystem initialized
+May 19 12:56:33  kernel: [    0.247226] ACPI: PCI Interrupt Link [LNKC] enabled at IRQ 10
+May 19 12:56:33  kernel: [    0.247648] ACPI: PCI Interrupt Link [LNKB] enabled at IRQ 10
+May 19 12:56:33  kernel: [    0.255311] usbcore: registered new interface driver usbfs
+May 19 12:56:33  kernel: [    0.255326] usbcore: registered new interface driver hub
+May 19 12:56:33  kernel: [    0.259906] usbcore: registered new device driver usb
+May 19 12:56:33  kernel: [    0.260200] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+May 19 12:56:33  kernel: [    0.260382] uhci_hcd: USB Universal Host Controller Interface driver
+May 19 12:56:33  kernel: [    0.261796] uhci_hcd 0000:00:01.2: UHCI Host Controller
+May 19 12:56:33  kernel: [    0.261812] uhci_hcd 0000:00:01.2: new USB bus registered, assigned bus number 1
+May 19 12:56:33  kernel: [    0.261870] uhci_hcd 0000:00:01.2: irq 11, io base 0x0000c040
+May 19 12:56:33  kernel: [    0.261912] usb usb1: New USB device found, idVendor=1d6b, idProduct=0001
+May 19 12:56:33  kernel: [    0.261914] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+May 19 12:56:33  kernel: [    0.261915] usb usb1: Product: UHCI Host Controller
+May 19 12:56:33  kernel: [    0.261917] usb usb1: Manufacturer: Linux 3.2.0-4-amd64 uhci_hcd
+May 19 12:56:33  kernel: [    0.261918] usb usb1: SerialNumber: 0000:00:01.2
+May 19 12:56:33  kernel: [    0.266687] hub 1-0:1.0: USB hub found
+May 19 12:56:33  kernel: [    0.266690] hub 1-0:1.0: 2 ports detected
+May 19 12:56:33  kernel: [    0.270543] scsi0 : ata_piix
+May 19 12:56:33  kernel: [    0.278498] scsi1 : ata_piix
+May 19 12:56:33  kernel: [    0.278533] ata1: PATA max MWDMA2 cmd 0x1f0 ctl 0x3f6 bmdma 0xc0a0 irq 14
+May 19 12:56:33  kernel: [    0.278535] ata2: PATA max MWDMA2 cmd 0x170 ctl 0x376 bmdma 0xc0a8 irq 15
+May 19 12:56:33  kernel: [    0.312526] FDC 0 is a S82078B
+May 19 12:56:33  kernel: [    0.313028]  vda: vda1 vda2 < vda5 >
+May 19 12:56:33  kernel: [    0.464467] ata2.00: ATAPI: QEMU DVD-ROM, 1.7.0, max UDMA/100
+May 19 12:56:33  kernel: [    0.464737] ata2.00: configured for MWDMA2
+May 19 12:56:33  kernel: [    0.465007] scsi 1:0:0:0: CD-ROM            QEMU     QEMU DVD-ROM     1.7. PQ: 0 ANSI: 5
+May 19 12:56:33  kernel: [    0.468484] sr0: scsi3-mmc drive: 4x/4x cd/rw xa/form2 tray
+May 19 12:56:33  kernel: [    0.468486] cdrom: Uniform CD-ROM driver Revision: 3.20
+May 19 12:56:33  kernel: [    0.470164] sr 1:0:0:0: Attached scsi generic sg0 type 5
+May 19 12:56:33  kernel: [    0.508250] PM: Starting manual resume from disk
+May 19 12:56:33  kernel: [    0.514126] EXT4-fs (vda1): mounted filesystem with ordered data mode. Opts: (null)
+May 19 12:56:33  kernel: [    0.576020] usb 1-1: new full-speed USB device number 2 using uhci_hcd
+May 19 12:56:33  kernel: [    0.736466] usb 1-1: New USB device found, idVendor=0627, idProduct=0001
+May 19 12:56:33  kernel: [    0.736468] usb 1-1: New USB device strings: Mfr=1, Product=3, SerialNumber=5
+May 19 12:56:33  kernel: [    0.736472] usb 1-1: Product: QEMU USB Tablet
+May 19 12:56:33  kernel: [    0.736473] usb 1-1: Manufacturer: QEMU
+May 19 12:56:33  kernel: [    0.736474] usb 1-1: SerialNumber: 42
+May 19 12:56:33  kernel: [    0.783516] piix4_smbus 0000:00:01.3: SMBus Host Controller at 0xb100, revision 0
+May 19 12:56:33  kernel: [    0.793061] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input1
+May 19 12:56:33  kernel: [    0.793065] ACPI: Power Button [PWRF]
+May 19 12:56:33  kernel: [    0.800175] WARNING! power/level is deprecated; use power/control instead
+May 19 12:56:33  kernel: [    0.816140] parport_pc 00:05: reported by Plug and Play ACPI
+May 19 12:56:33  kernel: [    0.820774] input: PC Speaker as /devices/platform/pcspkr/input/input2
+May 19 12:56:33  kernel: [    0.840723] input: QEMU QEMU USB Tablet as /devices/pci0000:00/0000:00:01.2/usb1/1-1/1-1:1.0/input/input3
+May 19 12:56:33  kernel: [    0.840815] generic-usb 0003:0627:0001.0001: input,hidraw0: USB HID v0.01 Pointer [QEMU QEMU USB Tablet] on usb-0000:00:01.2-1/input0
+May 19 12:56:33  kernel: [    0.840825] usbcore: registered new interface driver usbhid
+May 19 12:56:33  kernel: [    0.840826] usbhid: USB HID core driver
+May 19 12:56:33  kernel: [    1.000953] Adding 265212k swap on /dev/vda5.  Priority:-1 extents:1 across:265212k 
+May 19 12:56:33  kernel: [    1.007967] EXT4-fs (vda1): re-mounted. Opts: (null)
+May 19 12:56:33  kernel: [    1.044538] EXT4-fs (vda1): re-mounted. Opts: errors=remount-ro
+May 19 12:56:33  kernel: [    1.074779] loop: module loaded
+May 19 12:56:33  kernel: [    1.200033] Refined TSC clocksource calibration: 3491.968 MHz.
+May 19 12:56:33  kernel: [    1.424519] input: ImExPS/2 Generic Explorer Mouse as /devices/platform/i8042/serio1/input/input4
+May 19 12:56:33  kernel: [    1.501450] RPC: Registered named UNIX socket transport module.
+May 19 12:56:33  kernel: [    1.501452] RPC: Registered udp transport module.
+May 19 12:56:33  kernel: [    1.501453] RPC: Registered tcp transport module.
+May 19 12:56:33  kernel: [    1.501454] RPC: Registered tcp NFSv4.1 backchannel transport module.
+May 19 12:56:33  kernel: [    1.504685] FS-Cache: Loaded
+May 19 12:56:33  kernel: [    1.509435] FS-Cache: Netfs 'nfs' registered for caching
+May 19 12:56:33  kernel: [    1.512369] Installing knfsd (copyright (C) 1996 okir@monad.swb.de).

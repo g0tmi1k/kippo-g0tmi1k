@@ -304,6 +304,9 @@ class command_nop(HoneyPotCommand):
     def call(self):
         pass
 commands['/bin/chmod'] = command_nop
+commands['/bin/chown'] = command_nop
+commands['/bin/chgrp'] = command_nop
+commands['/usr/bin/chattr'] = command_nop
 commands['set'] = command_nop
 commands['unset'] = command_nop
 commands['export'] = command_nop

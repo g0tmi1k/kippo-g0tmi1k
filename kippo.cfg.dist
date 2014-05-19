@@ -140,7 +140,7 @@ ssh_version_string = SSH-2.0-OpenSSH_6.0p1 Debian-4+deb7u1
 # Banner file to be displayed before the first login attempt.
 #
 # (default: not specified)
-#banner_file =
+banner_file = honeyfs/etc/issue.net
 
 # Session management interface.
 #

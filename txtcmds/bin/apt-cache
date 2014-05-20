@@ -1,0 +1,34 @@
+apt 0.9.7.9 for amd64 compiled on Nov 16 2013 12:41:38
+Usage: apt-cache [options] command
+       apt-cache [options] showpkg pkg1 [pkg2 ...]
+       apt-cache [options] showsrc pkg1 [pkg2 ...]
+
+apt-cache is a low-level tool used to query information
+from APT's binary cache files
+
+Commands:
+   gencaches - Build both the package and source cache
+   showpkg - Show some general information for a single package
+   showsrc - Show source records
+   stats - Show some basic statistics
+   dump - Show the entire file in a terse form
+   dumpavail - Print an available file to stdout
+   unmet - Show unmet dependencies
+   search - Search the package list for a regex pattern
+   show - Show a readable record for the package
+   depends - Show raw dependency information for a package
+   rdepends - Show reverse dependency information for a package
+   pkgnames - List the names of all packages in the system
+   dotty - Generate package graphs for GraphViz
+   xvcg - Generate package graphs for xvcg
+   policy - Show policy settings
+
+Options:
+  -h   This help text.
+  -p=? The package cache.
+  -s=? The source cache.
+  -q   Disable progress indicator.
+  -i   Show only important deps for the unmet command.
+  -c=? Read this configuration file
+  -o=? Set an arbitrary configuration option, eg -o dir::cache=/tmp
+See the apt-cache(8) and apt.conf(5) manual pages for more information.

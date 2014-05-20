@@ -30,7 +30,7 @@ log_path = log
 # (default: dl)
 download_path = dl
 
-# Maximum file size (in bytes) for downloaded files to be stored in 'download_path'. 
+# Maximum file size (in bytes) for downloaded files to be stored in 'download_path'.
 # A value of 0 means no limit. If the file size is known to be too big from the start,
 # the file will not be stored on disk at all.
 #
@@ -141,6 +141,12 @@ ssh_version_string = SSH-2.0-OpenSSH_6.0p1 Debian-4+deb7u1
 #
 # (default: not specified)
 banner_file = honeyfs/etc/issue.net
+
+# Exit the honeypot on request or try to 'trick' the attacker with another shell.
+# note: depending on the attackers client (e.g. putty), will just quit regardless.
+#
+# (default: true)
+exit_jail = true
 
 # Session management interface.
 #

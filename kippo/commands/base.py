@@ -300,10 +300,23 @@ class command_sh(HoneyPotCommand):
 commands['/bin/bash'] = command_sh
 commands['/bin/sh'] = command_sh
 
+class command_chmod(HoneyPotCommand):
+    def call(self):
+        if len(self.args) and len(self.args) >= 2:
+            for arg in self.args[1:]:
+                path = self.fs.resolve_path(arg, self.honeypot.cwd)
+                if self.fs.exists(path):
+                    continue
+                else:
+                    self.writeln('chmod: cannot access %s: No such file or directory' % (arg,))
+        else:
+            self.writeln('chmod: missing operand')
+            self.writeln('Try chmod --help for more information.')
+commands['/bin/chmod'] = command_chmod
+
 class command_nop(HoneyPotCommand):
     def call(self):
         pass
-commands['/bin/chmod'] = command_nop
 commands['/bin/chown'] = command_nop
 commands['/bin/chgrp'] = command_nop
 commands['/usr/bin/chattr'] = command_nop

@@ -148,6 +148,13 @@ banner_file = honeyfs/etc/issue.net
 # (default: true)
 exit_jail = true
 
+# System version information. Kernel release & version, hardware and OS. (e.g. uname -r -v -m -o)
+# Only want the 'second half' of 'uname -a', as the rest is automatically generated.
+# note: make sure to match the version with 'txtcmds/usr/bin/dpkg'
+#
+# (default: "2.6.26-2-686 #1 SMP Wed Nov 4 20:45:37 UTC 2009 i686 GNU/Linux")
+system_version_string = 3.2.0-4-amd64 #1 SMP Debian 3.2.57-3+deb7u1 x86_64 GNU/Linux
+
 # Session management interface.
 #
 # This is a telnet based service that can be used to interact with active

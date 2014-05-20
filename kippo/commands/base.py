@@ -85,9 +85,13 @@ commands['/bin/hostname'] = command_hostname
 class command_uname(HoneyPotCommand):
     def call(self):
         if len(self.args) and self.args[0].strip() == '-a':
+            cfg = config()
+            self.system_version_string = '2.6.26-2-686 #1 SMP Wed Nov 4 20:45:37 UTC 2009 i686 GNU/Linux'
+            if cfg.has_option('honeypot', 'system_version_string'):
+                    self.system_version_string = cfg.get('honeypot', 'system_version_string')
             self.writeln(
-                'Linux %s 2.6.26-2-686 #1 SMP Wed Nov 4 20:45:37 UTC 2009 i686 GNU/Linux' % \
-                self.honeypot.hostname)
+                'Linux %s %s' % \
+                (self.honeypot.hostname, self.system_version_string))
         else:
             self.writeln('Linux')
 commands['/bin/uname'] = command_uname

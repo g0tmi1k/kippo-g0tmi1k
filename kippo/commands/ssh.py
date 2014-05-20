@@ -60,6 +60,7 @@ class command_ssh(HoneyPotCommand):
         reactor.callLater(2, self.finish, line)
 
     def finish(self, line):
+        cfg = config()
         self.pause = False
         rest, host = self.host, 'localhost'
         rest = self.host.strip().split('.')
@@ -70,9 +71,12 @@ class command_ssh(HoneyPotCommand):
         if not self.fs.exists(self.honeypot.cwd):
             self.honeypot.cwd = '/'
         self.honeypot.password_input = False
+        self.system_version_string = '2.6.26-2-686 #1 SMP Wed Nov 4 20:45:37 UTC 2009 i686 GNU/Linux'
+        if cfg.has_option('honeypot', 'system_version_string'):
+                self.system_version_string = cfg.get('honeypot', 'system_version_string')
         self.writeln(
-            'Linux %s 2.6.26-2-686 #1 SMP Wed Nov 4 20:45:37 UTC 2009 i686' % \
-            self.honeypot.hostname)
+            'Linux %s %s' % \
+                (self.honeypot.hostname, self.system_version_string))
         self.writeln('Last login: %s from 192.168.9.4' % \
             time.ctime(time.time() - 123123))
         self.exit()

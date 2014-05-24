@@ -116,6 +116,46 @@ class HoneyPotShell(object):
             runOrPrompt()
             return
 
+
+        if len(args) > 0 and ('<' == args[-1] or '>' == args[-1] or '|' == args[-1]):
+            print 'The attacker failed to a pipe command.'
+            self.honeypot.logDispatch('The attacker failed to a pipe command.')
+
+            if '<' == args[-1] or '>' == args[-1]:
+                self.honeypot.writeln('bash: syntax error near unexpected token `newline\'')
+            elif '|' == args[-1]:
+                self.honeypot.writeln('bash: syntax error: unexpected end of file')
+            self.cmdpending = []
+            self.showPrompt()
+            return
+
+        i = 0
+        for arg in args:
+            i += 1
+            if '<' == arg[-1:] or '>' == arg[-1:] or '|' == arg[-1:]:
+                print 'The attacker is trying to a pipe command.'
+                self.honeypot.logDispatch('The attacker is trying to a pipe command.')
+
+                if '<' == arg[-1:]:
+                    #path = args[i]
+                    #if self.fs.exists(path):
+                    #    continue
+                    #else:
+                    #    self.writeln('bash: no such file or directory: %s' % (path,))
+                    self.honeypot.writeln('')
+                    self.cmdpending = []
+                    self.showPrompt()
+                    return
+                elif '>' == arg[-1:]:
+                    self.cmdpending = []
+                    self.showPrompt()
+                    return
+                elif '|' == arg[-1:]:
+                    cmd = args[i]
+                    args = args[i+1:]
+                    print 'NEW CMD: %s' % cmd
+                    print 'NEW ARGS: %s' % args
+
         rargs = []
         for arg in args:
             matches = self.honeypot.fs.resolve_path_wc(arg, self.honeypot.cwd)
@@ -123,6 +163,7 @@ class HoneyPotShell(object):
                 rargs.extend(matches)
             else:
                 rargs.append(arg)
+
         cmdclass = self.honeypot.getCommand(cmd, envvars['PATH'].split(':'))
         if cmdclass:
             print 'Command found: %s' % (line,)

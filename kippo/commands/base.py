@@ -20,13 +20,13 @@ class command_uptime(HoneyPotCommand):
         if len(self.args):
             secs = int(self.args[0])
             self.honeypot.uptime(time.time() - secs)
-        self.writeln(' %s up %s,  1 user,  load average: 0.00, 0.00, 0.00' % \
+        self.writeln(' %s up %s,  1 user,  load average: 0.00, 0.01, 0.05' % \
             (time.strftime('%H:%M:%S'), utils.uptime(self.honeypot.uptime())))
 commands['/usr/bin/uptime'] = command_uptime
 
 class command_w(HoneyPotCommand):
     def call(self):
-        self.writeln(' %s up %s,  1 user,  load average: 0.00, 0.00, 0.00' % \
+        self.writeln(' %s up %s,  1 user,  load average: 0.00, 0.01, 0.00' % \
             (time.strftime('%H:%M:%S'), utils.uptime(self.honeypot.uptime())))
         self.writeln('USER     TTY      FROM              LOGIN@   IDLE   JCPU   PCPU WHAT')
         self.writeln('%-8s pts/0    %s %s    0.00s  0.00s  0.00s w' % \

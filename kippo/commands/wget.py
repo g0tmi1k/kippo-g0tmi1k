@@ -5,6 +5,7 @@ from kippo.core.honeypot import HoneyPotCommand
 from kippo.core.fs import *
 from twisted.web import client
 from twisted.internet import reactor
+from kippo.core.config import config
 import stat, time, urlparse, random, re, exceptions
 import os.path
 
@@ -106,7 +107,10 @@ class command_wget(HoneyPotCommand):
 
     def ctrl_c(self):
         self.writeln('^C')
-        self.connection.transport.loseConnection()
+        try:
+            self.connection.transport.loseConnection()
+        except:
+            print 'Unable to stop wget connection.'
 
     def success(self, data):
         self.exit()
@@ -124,8 +128,13 @@ commands['/usr/bin/wget'] = command_wget
 # from http://code.activestate.com/recipes/525493/
 class HTTPProgressDownloader(client.HTTPDownloader):
     def __init__(self, wget, fakeoutfile, url, outfile, headers=None):
+        wget_version = 'Wget/1.11.4'
+        cfg = config()
+        if cfg.has_option('honeypot', 'wget_version_string'):
+            wget_version = (cfg.get('honeypot', 'wget_version_string'), 0)
+
         client.HTTPDownloader.__init__(self, url, outfile, headers=headers,
-            agent='Wget/1.11.4')
+            agent=wget_version)
         self.status = None
         self.wget = wget
         self.fakeoutfile = fakeoutfile

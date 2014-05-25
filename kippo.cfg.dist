@@ -148,6 +148,12 @@ banner_file = honeyfs/etc/issue.net
 # (default: true)
 exit_jail = true
 
+# Wget version string
+# The user-agent that is spoofed when wget command is used.
+#
+# (default: "Wget/1.11.4")
+wget_version_string = Wget/1.13.4 (linux-gnu)
+
 # System version information. kernel release & version, hardware and OS. (e.g. uname -r -v -m -o)
 # Only want the 'second half' of 'uname -a', as the rest is automatically generated.
 # note: make sure to match the version with 'txtcmds/usr/bin/dpkg'

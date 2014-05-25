@@ -148,7 +148,7 @@ banner_file = honeyfs/etc/issue.net
 # (default: true)
 exit_jail = true
 
-# System version information. Kernel release & version, hardware and OS. (e.g. uname -r -v -m -o)
+# System version information. kernel release & version, hardware and OS. (e.g. uname -r -v -m -o)
 # Only want the 'second half' of 'uname -a', as the rest is automatically generated.
 # note: make sure to match the version with 'txtcmds/usr/bin/dpkg'
 #
@@ -164,6 +164,29 @@ system_version_string = 3.2.0-4-amd64 #1 SMP Debian 3.2.57-3+deb7u1 x86_64 GNU/L
 interact_enabled = false
 # (default: 5123)
 interact_port = 5123
+
+# SMTP module
+#
+# Email notification on:
+#   * Probe (recommended for LAN use only)
+#   * Successful login
+#   * User quit
+#
+# You are able to use 'SSL' or 'TLS' or 'None' to send the message by setting 'smtp_enc' to their lowercase value.
+#
+# To enable this module, remove all comments below, including the [smtp] line.
+
+#[smtp]
+#smtp_host = smtp.localhost.net
+#smtp_username = localhost.net
+#smtp_password = password
+#smtp_port = 587
+#smtp_enc = tls
+#email_to = admin@localhost.net
+#email_from = kippo@localhost.net
+#alert_probe = false
+#alert_login = false
+#alert_quit = true
 
 # MySQL logging module
 #

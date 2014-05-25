@@ -29,7 +29,7 @@ class command_w(HoneyPotCommand):
         self.writeln(' %s up %s,  1 user,  load average: 0.00, 0.01, 0.00' % \
             (time.strftime('%H:%M:%S'), utils.uptime(self.honeypot.uptime())))
         self.writeln('USER     TTY      FROM              LOGIN@   IDLE   JCPU   PCPU WHAT')
-        self.writeln('%-8s pts/0    %s %s    0.00s  0.00s  0.00s w' % \
+        self.writeln('%-8s pts/0    %s %s    0.00s  0.23s  0.00s w' % \
             (self.honeypot.user.username,
             self.honeypot.clientIP[:17].ljust(17),
             time.strftime('%H:%M', time.localtime(self.honeypot.logintime))))

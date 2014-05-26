@@ -184,6 +184,9 @@ class HoneyPotShell(object):
         self.runCommand()
 
     def showPrompt(self):
+        if (self.honeypot.execcmd != None):
+            return
+
         # Example: nas3:~#
         #prompt = '%s:%%(path)s' % self.honeypot.hostname
         # Example: root@nas3:~#  (More of a "Ubuntu" feel)

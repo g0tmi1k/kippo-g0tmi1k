@@ -15,5 +15,6 @@ __all__ = [
     'fs',
     'which',
     'env',
+    'netstat',
     'malware',
     ]

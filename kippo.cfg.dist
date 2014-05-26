@@ -111,6 +111,16 @@ exec_enabled = true
 # (default: not specified)
 #fake_addr = 192.168.66.254
 
+# Fake address displayed as the address of kippo server.
+# This doesn't affect logging, and is only used by honeypot commands such as
+# 'netstat'.
+#
+# If not specified, the actual IP address is displayed instead (default
+# behaviour).
+#
+# (default: not specified)
+#fake_kippo_addr = 192.168.66.78
+
 # SSH Version String
 #
 # Use this to disguise your honeypot from a simple SSH version scan

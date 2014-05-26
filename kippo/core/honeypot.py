@@ -319,6 +319,7 @@ class HoneyPotProtocol(recvline.HistoricRecvLine):
         transport.factory.sessions[transport.transport.sessionno] = self
 
         self.realClientIP = transport.transport.getPeer().host
+        self.realClientPort = transport.transport.getPeer().port
         self.clientVersion = transport.otherVersionString
         self.logintime = transport.logintime
         self.ttylog_file = transport.ttylog_file
@@ -329,6 +330,16 @@ class HoneyPotProtocol(recvline.HistoricRecvLine):
             self.clientIP = cfg.get('honeypot', 'fake_addr')
         else:
             self.clientIP = self.realClientIP
+
+        # IP of kippo in user visible reports (can be fake or real)
+        if cfg.has_option('honeypot', 'fake_kippo_addr'):
+            self.kippoIP = cfg.get('honeypot', 'fake_kippo_addr')
+        else:
+            import socket
+            s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+            s.connect(("gmail.com", 80))
+            self.kippoIP = s.getsockname()[0]
+            s.close()
 
         if self.execcmd != None:
             print 'Running exec cmd "%s"' % self.execcmd

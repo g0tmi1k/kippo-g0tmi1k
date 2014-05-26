@@ -62,9 +62,7 @@ class HoneyPotShell(object):
         self.showPrompt()
         self.cmdpending = []
         self.envvars = {
-            'PATH':     '/bin:/usr/bin:/sbin:/usr/sbin',
-            'SHELL':    '/bin/bash',
-            '_':        '/usr/bin/env',
+            'PATH':     '/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin',
             }
 
     def lineReceived(self, line):
